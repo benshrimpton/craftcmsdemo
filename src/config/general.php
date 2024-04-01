@@ -28,7 +28,7 @@ return [
         'useProjectConfigFile' => true,
         'aliases' => [
         ],
-        'allowAdminChanges' => 'true' === getenv('ALLOW_ADMIN_CHANGES'),
+        'allowAdminChanges' => true,
         'errorTemplatePrefix' => 'errors/',
     ],
 
@@ -47,6 +47,6 @@ return [
     // Production environment settings
     'production' => [
         // Set this to `false` to prevent administrative changes from being made on production
-        'allowUpdates' => false,
+        'allowUpdates' => true,
     ],
 ];
